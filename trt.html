@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fontawesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
+</head>
+
+<style>
+    .grid {
+        display: grid;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+    }
+
+    .grid p {
+        border: 1px solid;
+    }
+
+    .load-more,
+    p {
+        text-align: center;
+    }
+
+    .load-more a {
+        font-size: 20px;
+        text-decoration: none;
+        border: 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: red;
+
+    }
+
+    .load-more a:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .load-more:hover .fas {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .fas {
+        -webkit-transition: -webkit-transform 0.7s ease;
+        transition: transform 0.7s ease;
+        transform: scale(1.6);
+        padding: 10px 10px;
+    }
+
+    .input-group {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .social {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+</style>
+
+<body>
+
+    <!-- Load more Content -->
+    <div class="grid">
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+
+    <!-- When you click load more 3 more content to appear, but can you make default to show 4 products -->
+
+    <div class="load-more">
+        <a href="">
+            <span>Load More <i class="fas fa-plus"></i></span>
+
+        </a>
+    </div>
+
+    <!-- --------------- -->
+
+    <!-- Subscribe -->
+
+    <!-- This is really a subcriber button, can you tell me what i'd need to do SQL wise -->
+
+    <div class="input-group">
+        <form>
+            <input class="input-group-field" type="email" placeholder="Email Address" required>
+            <button class="button"><i class="fas fa-location-arrow"></i></i></button>
+        </form>
+    </div>
+
+    <!-- --------------- -->
+
+    <!-- Social Share -->
+
+    <!-- For the social is really simple, when they click on, they'd share the content they were on, so if theyre reading a blog theyd share that etc -->
+
+    <div class="social">
+        <i class="social-icon fab fa-twitter"></i>
+    </div>
+    <!-- --------------- -->
+
+
+</body>
+
+</html>
